@@ -55,9 +55,7 @@ document.getElementById('myclick').onclick = function() {
       $("#myclick").attr("disabled", true);
     };
 
-// Get the details of the last post - voters and weights in very nice css divs
-// Include somewhere at the top the user stats - like in stmd-desktop
-// Make a better layout, with blue colors and while colors and steem logo in title
+
 
 
 
