@@ -1,0 +1,35 @@
+<DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel ="stylesheet" type ="text/css" href ="style.css"/>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Montserrat|Open+Sans+Condensed:300|Oswald|Roboto+Condensed" rel="stylesheet"> 
+
+<head>
+    <title>Statistics for your Latest Steemit Post</title>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script src="http://cdn.steemjs.com/lib/latest/steem.min.js"></script>
+</head>
+
+<body>
+    <div id='maincontent'></div>
+    <h1><img id='logo' src='stmi.png'>LastPost</h1>
+    <br><br><br><br><br><br><br>
+    <div class='container-fluid' id='form1'>   
+        
+        <br>
+        <div id='accnt'>Enter username:</div>
+        <input class='form-control' id='txt1' type="text"><br><br>
+        <button class='btn btn-default' id='myclick'>Get stats!</button>
+        <button class='btn btn-default glyphicon glyphicon-refresh' id='refr'></button>
+        <script src='script.js'></script>
+    </div>
+    <div id='logosub'>Statistics for your last post on steemit</div><br>
+    <hr>
+    <br>
+    <center><div id='title_post'></div></center>
+    <center><div id="stats"></div></center>
+    <center><div id='response'></div><center>
+</body>
+
+</html>

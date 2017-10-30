@@ -1,0 +1,84 @@
+body, html {
+    font-family: 'Oswald', sans-serif;
+}
+
+#form1 {
+
+    width:400px; 
+    margin:50px auto;
+    padding: 20px 60px 20px 60px;
+    border-radius: 20px;
+    background-color: rgb(101, 202, 241);
+    box-shadow: 5px 5px 5px rgb(18, 103, 139);
+
+}
+
+hr {
+    border-color: rgb(101, 202, 241);
+    border: 0.3px solid rgb(101, 202, 241);
+
+}
+
+#response {
+    
+    width: 450px;
+    font-size: 18px;
+
+}
+
+#title_post {
+
+    font-size: 30px;
+}
+
+#accnt {
+    
+    font-size: 120%;
+    font-weight: bold;
+}
+
+h1 {
+    
+    font-size: 40px;
+    color: rgb(48, 156, 206);
+    float: right;
+    padding: 20px 60px 20px 60px;
+}
+
+#refr {
+    float: right;
+    display: none;
+}
+
+#logo {
+    padding: 10px 5px 25px 0px;
+    
+}
+
+#logosub {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(48, 156, 206);
+
+}
+
+#perc {
+    background-color: rgb(60, 221, 11);
+    border-radius: 4px;
+    width: 45px;
+    border-color: black;
+    text-align: center;
+}
+
+#stats {
+    font-size: 19px;
+}
+
+#profimg {
+    display: block;
+    max-width:60px;
+    max-height:60px;
+    width: auto;
+    height: auto;
+}
+
