@@ -1,24 +1,23 @@
-document.getElementById('refr').onclick = function() {
-    $('#response').empty();
-    $('#title_post').empty();
-    $('#stats').empty();
-    $('#vote').empty();
-    $('#perc').empty();
-    
+var refr = function() {
+    $('#response').html('');
+    $('#title_post').html('');
+    $('#stats').html('');
+        
 };
 
 var vote_arr = [];
  
-document.getElementById('myclick').onclick = function() {  
+var myclick = function() {  
+    $('.loader').addClass("show-loader");
+    accnt_name = $('#txt1').val();
 
-    var accnt_name = $('#txt1').val();
-  
     var query = {
         tag: accnt_name,
         limit: 20
       };
 
     var accnt = steem.api.getDiscussionsByBlog(query, function(err, result) {
+        
         console.log(err, result);
 
         var url = 'http://steemit.com'+result[0].url;
@@ -44,16 +43,37 @@ document.getElementById('myclick').onclick = function() {
         (vote_arr.sort());
 
         for (var i=0; i<vote_arr.length; i++) {
-            
-            $('#response').append('<div id="vote"><span style="float:left">'+vote_arr[i][1]+'</span><span id="perc" style="float:right">'+vote_arr[i][2]+'</span></div><br>');
+        
+        $('#response').append('<div id="vote" onclick="clk()"><span style="float:left">'+vote_arr[i][1]+'</span><span id="perc" style="float:right">'+vote_arr[i][2]+'</span></div><br>');
         }
         $('#response').append('<br><br><center><div id="footer"><a href="http://steemit.com/@cristi">@cristi</a></footer><br><br><center>');
+        $('.loader').addClass("hide-loader");
       });
 
       // Disable the button after once pressed
 
       $("#myclick").attr("disabled", true);
+      
     };
+
+    function clk () {
+        var vtv = $('#vote').text();
+        console.log(vtv);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

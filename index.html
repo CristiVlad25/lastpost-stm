@@ -9,6 +9,16 @@
     <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
     crossorigin="anonymous"></script>
     <script src="http://cdn.steemjs.com/lib/latest/steem.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48400216-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-48400216-1');
+    </script>
+
 </head>
 
 <body>
@@ -20,16 +30,23 @@
         <br>
         <div id='accnt'>Enter username:</div>
         <input class='form-control' id='txt1' type="text"><br><br>
-        <button class='btn btn-default' id='myclick'>Get stats!</button>
+        <button class='btn btn-default' id='myclick' onclick='myclick()'>Get stats!</button>
         <button class='btn btn-default glyphicon glyphicon-refresh' id='refr'></button>
         <script src='script.js'></script>
+        <script src='voteVal.js'></script>
     </div>
     <div id='logosub'>Statistics for your last post on steemit</div><br>
+    <center>
+        <button title='Upvote Value Calculator' class='glyphicon glyphicon-usd' 
+        onclick="window.open('upcalc.html','name','width=600,height=580')"></button>
+    </center>
     <hr>
     <br>
+    <center><div class='loader' id='loader'></div></center>
     <center><div id='title_post'></div></center>
     <center><div id="stats"></div></center>
     <center><div id='response'></div><center>
+            
 </body>
 
 </html>

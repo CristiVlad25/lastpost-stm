@@ -1,0 +1,46 @@
+<DOCTYPE html>
+        <html lang="en">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel ="stylesheet" type ="text/css" href ="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Montserrat|Open+Sans+Condensed:300|Oswald|Roboto+Condensed" rel="stylesheet"> 
+        
+        <head>
+            <title>Upvote Value Calculator for Steemit</title>
+            <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+            <script src="http://cdn.steemjs.com/lib/latest/steem.min.js"></script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48400216-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+        
+                gtag('config', 'UA-48400216-1');
+            </script>
+        
+        </head>
+        
+        <body>
+            <div id='maincontent'></div>
+            <h1><img id='logo' src='stmi.png'>UpCalc</h1>
+            <br><br><br><br>
+            <div class='container-fluid' id='form2'>   
+                
+                <br>
+                <div id='accnt2'>Enter username:</div>
+                <input class='form-control' id='txt2' type="text"><br>
+                <div id='voteWeight'>Enter vote weight (%):</div>
+                <input class='form-control' id='txt3' type="text"><br><br>
+                <button class='btn btn-default' id='voteClick' onclick='voteClick()'>Get Vote Value!</button>
+                <script src='script.js'></script>
+                <script src='voteVal.js'></script>
+            </div>
+            <hr>
+            <br>
+            <center><div class='loader' id='loader'></div></center>
+            <center><div id='responseCalc'></div><center>
+                    
+        </body>
+        
+        </html>
