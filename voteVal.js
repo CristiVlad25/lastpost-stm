@@ -82,26 +82,3 @@ var voteClick = function() {
 
         $("#voteClick").attr("disabled", true);
     };
-
-
-//Order of execution: getsteempower (to get sP) => getdynglobal (to get power) => getvotevalue
-
-// Enter Username in a popup window where you can check the power of the vote, make div clickable?
-// $('#stats').append('Current Vote Weight at 100%: '+Math.round(sP) + '<br><br>');
-
-    /*
-
-def getvotevalue(SP, VotingPower, VotingWeight):
-POWER = SP / (float(steem.steemd.get_dynamic_global_properties()['total_vesting_fund_steem'].rstrip(' STEEM')) \
-    / float(steem.steemd.get_dynamic_global_properties()['total_vesting_shares'].rstrip(' VESTS')))
-
-VOTING = ((100 * VotingPower * (100 * VotingWeight) / 10000) + 49) / 50
-
-REW = float(steem.steemd.get_reward_fund()['reward_balance'].rstrip(' STEEM')) \
-    / float(steem.steemd.get_reward_fund()['recent_claims'])
-
-PRICE = float(steem.steemd.get_current_median_history_price()['base'].rstrip(' SBD')) \
-    / float(steem.steemd.get_current_median_history_price()['quote'].rstrip(' STEEM'))
-
-VoteValue = (POWER * VOTING * 100) * REW * PRICE
-return VoteValue*/
